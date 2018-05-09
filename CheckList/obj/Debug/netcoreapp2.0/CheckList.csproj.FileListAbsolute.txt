@@ -1,0 +1,10 @@
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\bin\Debug\netcoreapp2.0\CheckList.deps.json
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\bin\Debug\netcoreapp2.0\CheckList.runtimeconfig.json
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\bin\Debug\netcoreapp2.0\CheckList.runtimeconfig.dev.json
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\bin\Debug\netcoreapp2.0\CheckList.dll
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\bin\Debug\netcoreapp2.0\CheckList.pdb
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\obj\Debug\netcoreapp2.0\CheckList.csproj.CoreCompileInputs.cache
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\obj\Debug\netcoreapp2.0\CheckList.AssemblyInfoInputs.cache
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\obj\Debug\netcoreapp2.0\CheckList.AssemblyInfo.cs
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\obj\Debug\netcoreapp2.0\CheckList.dll
+C:\Users\bruno.dsn.erp\Projetos\net-core\checklist\checklist\obj\Debug\netcoreapp2.0\CheckList.pdb
