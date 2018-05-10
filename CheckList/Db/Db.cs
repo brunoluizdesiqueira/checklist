@@ -21,11 +21,11 @@ namespace CheckList.Db
 
                 // Create a Tarefa table
                 _dbConnection.Execute(@"
-                    CREATE TABLE IF NOT EXISTS [Tarefa] (
-                        [Id] INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-                        [Tipo] NVARCHAR(128) NOT NULL,
-                        [Descricao] VARCHAR(500)NOT NULL,
-                        [Status] INTEGER NOT NULL
+                    CREATE TABLE IF NOT EXISTS Tarefa (
+                        Id SERIAL NOT NULL PRIMARY KEY,
+                        Tipo VARCHAR(128) NOT NULL,
+                        Descricao VARCHAR(500)NOT NULL,
+                        Status INTEGER NOT NULL
                     )");
 
                 _dbConnection.Close();
