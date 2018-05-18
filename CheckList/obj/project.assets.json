@@ -12599,29 +12599,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/bruno/.nuget/packages/": {},
-    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+    "C:\\Users\\bruno.dsn.erp\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/bruno/Projetos/net-core/checklist/checklist/CheckList/CheckList.csproj",
+      "projectUniqueName": "C:\\Users\\bruno.dsn.erp\\Projetos\\net-core\\checklist\\CheckList\\CheckList.csproj",
       "projectName": "CheckList",
-      "projectPath": "/Users/bruno/Projetos/net-core/checklist/checklist/CheckList/CheckList.csproj",
-      "packagesPath": "/Users/bruno/.nuget/packages/",
-      "outputPath": "/Users/bruno/Projetos/net-core/checklist/checklist/CheckList/obj/",
+      "projectPath": "C:\\Users\\bruno.dsn.erp\\Projetos\\net-core\\checklist\\CheckList\\CheckList.csproj",
+      "packagesPath": "C:\\Users\\bruno.dsn.erp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bruno.dsn.erp\\Projetos\\net-core\\checklist\\CheckList\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/bruno/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\bruno.dsn.erp\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {}
+        "http://10.0.0.45/nuget": {},
+        "http://msbuild:8888/nuget": {},
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "netcoreapp2.0": {
@@ -12639,7 +12641,7 @@
         "dependencies": {
           "Microsoft.NETCore.App": {
             "target": "Package",
-            "version": "2.0",
+            "version": "2.0.0",
             "autoReferenced": true
           },
           "Dapper": {

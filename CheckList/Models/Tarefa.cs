@@ -11,7 +11,6 @@ namespace CheckList.Models
         public string Titulo { get; set; }
         [Required]
         public string Descricao { get; set; }
-        [Required]
         public IList<Comentario> ListaComentarios { get; set; }
         [Required]
         public StatusTarefaEnum Status { get; set; }

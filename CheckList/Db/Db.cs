@@ -23,8 +23,8 @@ namespace CheckList.Db
                 _dbConnection.Execute(@"
                     CREATE TABLE IF NOT EXISTS Tarefa (
                         Id SERIAL NOT NULL PRIMARY KEY,
-                        Tipo VARCHAR(128) NOT NULL,
-                        Descricao VARCHAR(500)NOT NULL,
+                        Titulo VARCHAR(128) NOT NULL,
+                        Descricao VARCHAR(500) NOT NULL,
                         Status INTEGER NOT NULL
                     )");
 
