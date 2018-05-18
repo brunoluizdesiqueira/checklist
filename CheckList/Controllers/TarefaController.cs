@@ -47,7 +47,7 @@ namespace CheckList.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind("Id,Titulo,Descricao")] Tarefa tarefa)
+        public ActionResult Create([Bind("Id,Titulo,Descricao,Status")] Tarefa tarefa)
         {
             if (ModelState.IsValid)
             {
@@ -76,7 +76,7 @@ namespace CheckList.Controllers
         // POST: Tarefas/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind("Id,Titulo,Descricao")] Tarefa tarefa)
+        public ActionResult Edit([Bind("Id,Titulo,Descricao,Status")] Tarefa tarefa)
         {
             if (ModelState.IsValid)
             {
