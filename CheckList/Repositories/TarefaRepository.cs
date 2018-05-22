@@ -16,8 +16,8 @@ namespace CheckList.Repositories
         {
              using (IDbConnection dbConnection = new NpgsqlConnection(ConnectionString))
             {
-                string sQuery = "INSERT INTO Tarefa (Titulo, Descricao, Status)"
-                                + " VALUES(@Titulo, @Descricao, @Status)";
+                string sQuery = "INSERT INTO Tarefa (Titulo, Descricao, Status, DataCriacao, DataEncerramento)"
+                                + " VALUES(@Titulo, @Descricao, @Status, @DataCriacao, @DataEncerramento)";
                 dbConnection.Open();
                 dbConnection.Execute(sQuery, item);
             }
@@ -59,7 +59,8 @@ namespace CheckList.Repositories
             using (IDbConnection dbConnection = new NpgsqlConnection(ConnectionString))
             {
                 string sQuery = "UPDATE Tarefa SET Titulo = @Titulo,"
-                            + " Descricao = @Descricao, Status= @Status"
+                            + " Descricao = @Descricao, Status= @Status,"
+                            + " DataEncerramento= @DataEncerramento"
                             + " WHERE Id = @Id";
                 dbConnection.Open();
                 dbConnection.Query(sQuery, item);

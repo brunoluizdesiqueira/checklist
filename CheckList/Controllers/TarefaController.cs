@@ -1,4 +1,6 @@
+using System;
 using System.Linq;
+using CheckList.Enums;
 using CheckList.Models;
 using CheckList.Repositories;
 using Microsoft.AspNetCore.Http;
@@ -47,10 +49,16 @@ namespace CheckList.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind("Id,Titulo,Descricao,Status")] Tarefa tarefa)
+        public ActionResult Create([Bind("Id,Titulo,Descricao,Status,DataCriacao,DataEncerramento")] Tarefa tarefa)
         {
             if (ModelState.IsValid)
             {
+                tarefa.DataCriacao = DateTime.Now;
+
+                if (tarefa.Status.Equals(StatusTarefaEnum.Finalizada)) {
+                    tarefa.DataEncerramento = DateTime.Now;
+                }
+
                 tarefaRepository.Add(tarefa);
                 return RedirectToAction("Index");
             }
@@ -76,10 +84,15 @@ namespace CheckList.Controllers
         // POST: Tarefas/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind("Id,Titulo,Descricao,Status")] Tarefa tarefa)
+        public ActionResult Edit([Bind("Id,Titulo,Descricao,Status,DataCriacao,DataEncerramento")] Tarefa tarefa)
         {
             if (ModelState.IsValid)
             {
+                if (tarefa.Status.Equals(StatusTarefaEnum.Finalizada) && 
+                    (!tarefa.DataEncerramento.HasValue)) {
+                    tarefa.DataEncerramento = DateTime.Now;
+                }
+
                 tarefaRepository.Update(tarefa);
                 return RedirectToAction("Index");
             }

@@ -25,7 +25,9 @@ namespace CheckList.Db
                         Id SERIAL NOT NULL PRIMARY KEY,
                         Titulo VARCHAR(128) NOT NULL,
                         Descricao VARCHAR(500) NOT NULL,
-                        Status INTEGER NOT NULL
+                        Status INTEGER NOT NULL,
+                        DataCriacao TIMESTAMP, 
+                        DataEncerramento TIMESTAMP
                     )");
 
                 _dbConnection.Close();

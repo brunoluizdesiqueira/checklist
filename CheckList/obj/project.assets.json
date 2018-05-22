@@ -12605,11 +12605,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bruno.dsn.erp\\Projetos\\net-core\\checklist\\CheckList\\CheckList.csproj",
+      "projectUniqueName": "C:\\Users\\bruno.dsn.erp\\Projetos\\net-core\\checklist\\checklist\\CheckList.csproj",
       "projectName": "CheckList",
-      "projectPath": "C:\\Users\\bruno.dsn.erp\\Projetos\\net-core\\checklist\\CheckList\\CheckList.csproj",
+      "projectPath": "C:\\Users\\bruno.dsn.erp\\Projetos\\net-core\\checklist\\checklist\\CheckList.csproj",
       "packagesPath": "C:\\Users\\bruno.dsn.erp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bruno.dsn.erp\\Projetos\\net-core\\checklist\\CheckList\\obj\\",
+      "outputPath": "C:\\Users\\bruno.dsn.erp\\Projetos\\net-core\\checklist\\checklist\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
